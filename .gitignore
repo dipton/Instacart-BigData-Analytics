@@ -1,0 +1,46 @@
+# Java
+*.class
+*.jar
+
+# Build folders
+bin/
+target/
+
+# IDE files
+.idea/
+.vscode/
+
+# System files
+Thumbs.db
+.DS_Store
+
+# Large dataset files# Java
+*.class
+*.jar
+
+# Build folders
+bin/
+target/
+
+# IDE
+.idea/
+.vscode/
+
+# System
+Thumbs.db
+.DS_Store
+
+# Large dataset files
+Dataset/orders.csv
+Dataset/order_products__prior.csv
+Dataset/order_products__train.csv
+Dataset/aisles.csv
+Dataset/departments.csv
+
+# Large output files
+Outputs/Pig1_ReorderedProducts/
+Dataset/orders.csv
+Dataset/order_products__prior.csv
+Dataset/order_products__train.csv
+Dataset/aisles.csv
+Dataset/departments.csv
