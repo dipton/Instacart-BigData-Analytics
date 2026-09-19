@@ -23,7 +23,7 @@ The project performs the following analyses:
 
 The following figure illustrates the Hadoop ecosystem used in this project.
 
-![Hadoop Architecture](images/hadoop_architecture.png)
+![Hadoop Architecture](Images/hadoop_architecture.png)
 
 ---
 
@@ -31,7 +31,7 @@ The following figure illustrates the Hadoop ecosystem used in this project.
 
 The following diagram shows how the Instacart dataset flows through HDFS, Java MapReduce, and Apache Pig before generating distributed outputs.
 
-![Instacart Workflow](images/instacart_workflow.png)
+![Instacart Workflow](Images/instacart_workflow.png)
 
 ---
 
