@@ -10,12 +10,14 @@ The Instacart Market Basket Analysis dataset was uploaded to the Hadoop Distribu
 
 The project performs the following analyses:
 
-- Count orders by day of the week
-- Count orders by hour of the day
-- Identify the most purchased products
-- Extract reordered products
-- Find products added first to the cart
-- Generate top purchased products using Apache Pig
+* Count orders by day of the week
+* Count orders by hour of the day
+* Identify the most purchased products
+* Extract reordered products
+* Find products added first to the cart
+* Generate top purchased products using Apache Pig
+* Analyze weekend orders using Apache Pig
+* Count products by department using Apache Pig
 
 ---
 
@@ -37,10 +39,10 @@ The following diagram shows how the Instacart dataset flows through HDFS, Java M
 
 ## Technologies Used
 
-- Apache Hadoop (HDFS)
-- Java MapReduce
-- Apache Pig
-- Windows Single-Node Hadoop Cluster
+* Apache Hadoop (HDFS)
+* Java MapReduce
+* Apache Pig
+* Windows Single-Node Hadoop Cluster
 
 ---
 
@@ -61,7 +63,9 @@ Instacart-BigData-Analytics/
 ├── Pig/
 │   ├── Pig1_ReorderedProducts/
 │   ├── Pig2_FirstCartProducts/
-│   └── Pig3_TopPurchasedProducts/
+│   ├── Pig3_TopPurchasedProducts/
+│   ├── Pig4_WeekendOrders/
+│   └── Pig5_ProductCountByDepartment/
 │
 ├── Outputs/
 │   ├── MR1_OrdersByDay/
@@ -69,13 +73,67 @@ Instacart-BigData-Analytics/
 │   ├── MR3_TopPurchasedProducts/
 │   ├── Pig1_ReorderedProducts/
 │   ├── Pig2_FirstCartProducts/
-│   └── Pig3_TopPurchasedProducts/
+│   ├── Pig3_TopPurchasedProducts/
+│   ├── Pig4_WeekendOrders/
+│   └── Pig5_DepartmentCount/
 │
 ├── Report/
 │
-├── images/
+├── Images/
 │   ├── hadoop_architecture.png
 │   └── instacart_workflow.png
 │
 ├── README.md
 └── .gitignore
+```
+
+---
+
+## Dataset Description
+
+The project uses the **Instacart Market Basket Analysis Dataset**, a real-world retail transaction dataset containing customer orders, product information, aisles, and departments. The data is suitable for Hadoop-based distributed processing and market basket analysis.
+
+Key dataset files include:
+
+* `orders.csv` – Customer order history.
+* `products.csv` – Product information.
+* `order_products__prior.csv` – Products from previous orders.
+* `order_products__train.csv` – Training order-product data.
+* `aisles.csv` – Aisle information.
+* `departments.csv` – Department information.
+
+---
+
+## Typical Analytics Workflow
+
+1. Upload the dataset to HDFS.
+2. Process transactional data using Java MapReduce.
+3. Execute Apache Pig scripts for additional analytics.
+4. Store generated results in the `Outputs` directory.
+5. Interpret the results for customer purchasing behavior analysis.
+
+---
+
+## Learning Outcomes
+
+This project demonstrates:
+
+* Distributed data processing with Hadoop.
+* Java MapReduce implementation.
+* Apache Pig scripting for data analysis.
+* Customer purchasing behavior analysis.
+* Big data workflow execution on a Hadoop cluster.
+
+---
+
+## Notes
+
+* The repository contains the datasets, Hadoop processing modules, Apache Pig scripts, generated outputs, and supporting project documentation.
+* The included architecture and workflow diagrams illustrate how data flows through the Hadoop ecosystem.
+* The project serves as a practical implementation of Big Data Analytics concepts using the Instacart dataset.
+
+---
+
+## License
+
+This repository is intended for educational and academic purposes.
